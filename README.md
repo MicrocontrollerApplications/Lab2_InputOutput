@@ -4,11 +4,11 @@ See also below short description of the relevant registers for today's laborator
 
 ## Relevant registers
 > [!IMPORTANT]
-> **TRISB** sets the direction of a pin: "0" = output, "1" = input
-> **PORTB** reads the logic level at the pin: "0" = 0-0.8 V, "1" = Vdd (1.6-3.3 V or 2.0-5.0 V for TTL inputs)
-> **LATB** set the output voltage of a pin: "0" = 0 V, "1" = Vdd (3.3 V or 5 V)
-> **ANSELB** sets the pins digital or analog: "0" = digital, not necessarry with given configration
-> **OSCCON** sets the oscillator freq.: 0x50 = 4 MHz, 0x30 = 1 MHz. The instruction freq. are 1 MHz and 250 kHz respectively
+> **TRISB** sets the direction of a pin: "0" = output, "1" = input<br>
+> **PORTB** reads the logic level at the pin: "0" = 0-0.8 V, "1" = Vdd (1.6-3.3 V or 2.0-5.0 V for TTL inputs)<br>
+> **LATB** set the output voltage of a pin: "0" = 0 V, "1" = Vdd (3.3 V or 5 V)<br>
+> **ANSELB** sets the pins digital or analog: "0" = digital, not necessarry with given configration<br>
+> **OSCCON** sets the oscillator freq.: 0x50 = 4 MHz, 0x30 = 1 MHz. The instruction freq. are 1 MHz and 250 kHz respectively<br>
 > **<Register>bits.X** TRISBbits.TRISB3 or LATBbits.LATB3 or PORTBbits.RB3 is the direct access to the bit 3 via a struct (see structures in C).
 
 ## Excercise 1 -  Code analysis
