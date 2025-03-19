@@ -8,6 +8,11 @@
 
 #include <xc.h>
 
+/**
+ * Initialization function for our program. You'll learn to extend this today :)
+ */
+void __init(void);
+
 void main(void) {
     // initialize microcontroller
     __init();
@@ -34,4 +39,11 @@ void main(void) {
     }
     
     return 0;
+}
+
+void __init(void){
+    OSCCON = 0x50; // 500kHz internal clock (we'll learn that soon!))
+    ANSELB = 0; // set all pins in register B to be digital
+    TRISB = 0b00001010; //Input: RB2 and RB4; Output: all others
+    LATB = 0b00001010; // Turn LEDs off
 }

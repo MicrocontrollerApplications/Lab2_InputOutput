@@ -9,11 +9,13 @@
           <itemPath>Libraries/LCD/GLCD_library.h</itemPath>
         </logicalFolder>
       </logicalFolder>
+      <itemPath>GLCD_config.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
+      <itemPath>../README.md</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -29,13 +31,12 @@
           <itemPath>Libraries/LCD/charSet8x5.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>newmain.c</itemPath>
       <itemPath>uC_config.c</itemPath>
-      <itemPath>GLCD_config.h</itemPath>
+      <itemPath>main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>Libraries/LCD</Elem>
+    <Elem>..</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
