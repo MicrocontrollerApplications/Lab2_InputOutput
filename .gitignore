@@ -1,0 +1,8 @@
+Lab1_HelloWorld.X/debug/
+Lab1_HelloWorld.X/build/
+Lab1_HelloWorld.X/dist/
+Lab1_HelloWorld.X/nbproject/*
+!Lab1_HelloWorld.X/nbproject/configurations.xml
+!Lab1_HelloWorld.X/nbproject/project.xml
+
+*.log*
