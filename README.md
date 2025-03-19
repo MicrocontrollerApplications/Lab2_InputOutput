@@ -17,7 +17,14 @@ Next, we go through the code step by step , which is called debugging.
 You have written your own code or copied highly freaky code from us, but do not fully understand the function.
 Not to worry! For this you need an observation tool, the Watch, from the MPLAB X IDE. 
 See below video for an instruction on debugging with MPLAB's watch-functionality.
+
 ![](images/OpenWatch.gif)
+
+The relevant register we want to track are:
+- LATB, to see which values are set from the code
+- PORTB, to see which (logical) value every pin in Register B currently has
+
+In Case the video was to fast, click [here](#open-debug-watch) for a textual description.
 
 Choose Debug Debug Main
 Project from the menu and then Debug->Pause from the menu. Insert the SFR TRISB, LATB and PORTB via Menu
@@ -45,7 +52,7 @@ and observe the values in PORTB.
 ![](images/uCquick_Board_2018_01.svg)
 
 
-### Relevant registers
+## Relevant registers
 > [!IMPORTANT]
 > **TRISB** sets the direction of a pin: "`0"' = output, "`1"' = input\\
 > **PORTB** reads the logic level at the pin: "`0"' = 0-0.8 V, "`1"' = Vdd (1.6-3.3 V or 2.0-5.0 V for TTL inputs)\\
@@ -53,3 +60,12 @@ and observe the values in PORTB.
 > **ANSELB** sets the pins digital or analog: "`0"' = digital, not necessarry with given configration\\
 > **OSCCON** sets the oscillator freq.: 0x50 = 4 MHz, 0x30 = 1 MHz. The instruction freq. are 1 MHz and 250 kHz respectively\\
 > **<Register>bits.X** TRISBbits.TRISB3 or LATBbits.LATB3 or PORTBbits.RB3 is the direct access to the bit 3 via a struct (see structures in C).
+
+## Open Debug Watch
+Execute the following to open the debug watch:
+1. click Debug (top of the IDE)
+2. click "New Watch ..." in the just opened submenu
+3. Type LATB (or whatever register you want to watch) into the textfield and click "Okay"
+4. a new tab opened at the bottom of you IDE -> "Variables"
+5. double click on "\<Enter new watch\>" and enter the next (PORTB) register (or variable) you want to watch (i.e. debug)
+6. *DONE* your watch is set up for this lab.
