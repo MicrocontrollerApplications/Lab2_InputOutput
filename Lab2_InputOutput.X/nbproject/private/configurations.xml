@@ -3,7 +3,7 @@
   <projectmakefile>Makefile</projectmakefile>
   <defaultConf>0</defaultConf>
   <confs>
-    <conf name="default" type="2">
+    <conf name="PicKIT3" type="2">
       <platformToolSN></platformToolSN>
       <languageToolchainDir>/opt/microchip/xc8/v3.00/bin</languageToolchainDir>
       <mdbdebugger version="1">
