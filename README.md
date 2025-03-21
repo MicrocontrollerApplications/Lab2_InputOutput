@@ -2,12 +2,14 @@
 In today's laboratory session we will deepen our knowledge about digital input and output. Therefore, we will turn our LEDs on or off with buttons and do some trainig on the handling of registers.
 See also below short description of the relevant registers for today's laboratory session.
 
+Please clone the GitHub repository, as done in the previous lab. Is you need a manual for that, click [here](https://github.com/MicrocontrollerApplications/Utilities/blob/main/git.md)
+
 ## Relevant registers
 > [!IMPORTANT]
 > **TRISB** sets the direction of a pin: "0" = output, "1" = input<br>
 > **PORTB** reads the logic level at the pin: "0" = 0-0.8 V, "1" = Vdd (1.6-3.3 V or 2.0-5.0 V for TTL inputs)<br>
 > **LATB** set the output voltage of a pin: "0" = 0 V, "1" = Vdd (3.3 V or 5 V)<br>
-> **ANSELB** sets the pins digital or analog: "0" = digital, not necessarry with given configration<br>
+> **ANSELB** sets a pin as digital or analog: "0" = digital, "1" = analog
 > **OSCCON** sets the oscillator freq.: 0x50 = 4 MHz, 0x30 = 1 MHz. The instruction freq. are 1 MHz and 250 kHz respectively<br>
 > **<Register>bits.X** TRISBbits.TRISB3 or LATBbits.LATB3 or PORTBbits.RB3 is the direct access to the bit 3 via a struct (see structures in C).
 
@@ -47,11 +49,15 @@ of column LATB with a red circle. Keep in mind to start counting from 0 and from
 7 is far left).
 
 > [!IMPORTANT]
-> **Task**: Clear all breakpoints (if you already set any), set a breakpoint into line 60 
+> **Task**: Clear all breakpoints (if you already set any), set a breakpoint into line 38 
 > ``` C
 > Nop(); // Do nothing, a breakpoint may be placed here),
 > ```
 > restart the programm from the beginning and follow the actions in the First column. Do hold the buttons as in the action stated, start the execution with F5 and read out the values PORTB and LATB from the Watch.
+
+> [!WARNING]
+> Within the new IDE breakpoints on lines containing a *NOP()* are not highlighted in green anymore. You need to check the IDE's output (bottom of the IDE) for the informative string ***Target halted***. That means the program is, in our today's case, currently halted at line 38.
+> Currently, the reason for this behaviour is unclear...
 
 <br>
 
@@ -61,11 +67,11 @@ of column LATB with a red circle. Keep in mind to start counting from 0 and from
 |press button TL and hold, <br>then F5 to continue program | | | | |
 | release the button and press F5 afterwards | | | | |
 | press button TR and hold,<br> then press F5, **then press Pause!** | | | | |
-| release all buttons, then press F5 | | | | |
+| release the button, then press F5 | | | | |
 | press button TR again and hold,<br> then press F5, **then press Pause!** | | | | |
-| release all buttons, then press F5  | | | | |
+| release the button, then press F5  | | | | |
 | press button TR again and hold,<br> then press F5, **then press Pause!** | | | | |
-| release all buttons,<br> then press F5, **then press Pause!** | | | | |
+| release the button,<br> then press F5, **then press Pause!** | | | | |
 
 ## Excercise 3 - Reading the schematic
 In the following excercises we will add the middle button (TM) to our code to extend its functionality.
@@ -89,7 +95,7 @@ You will recognize, that the LEDs might count in the wrong direction (i.e. least
 
 
 ## Development Board's Schematic
-[Here](images/uCquick_Board_2018_01.svg) is alink to the standalone schematic (zoomable).
+[Here](https://raw.githubusercontent.com/MicrocontrollerApplications/Lab2_InputOutput/refs/heads/feature_initial_version/images/uCquick_Board_2018_01.svg) is a link to the standalone schematic (zoomable). 
 
 ![](images/uCquick_Board_2018_01.svg)
 
