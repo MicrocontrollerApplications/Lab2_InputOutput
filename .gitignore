@@ -6,3 +6,5 @@ Lab1_HelloWorld.X/nbproject/*
 !Lab1_HelloWorld.X/nbproject/project.xml
 
 *.log*
+/Lab2_InputOutput.X/build/
+/Lab2_InputOutput.X/dist/
