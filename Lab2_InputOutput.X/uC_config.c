@@ -1,9 +1,10 @@
+
 // PIC18F25K22 Configuration Bit Settings
 
 // 'C' source line config statements
 
 // CONFIG1H
-#pragma config FOSC = HSMP      // Oscillator Selection bits (HS oscillator (medium power 4-16 MHz))
+#pragma config FOSC = INTIO67   // Oscillator Selection bits (Internal oscillator block)
 #pragma config PLLCFG = OFF     // 4X PLL Enable (Oscillator used directly)
 #pragma config PRICLKEN = ON    // Primary clock enable bit (Primary clock enabled)
 #pragma config FCMEN = OFF      // Fail-Safe Clock Monitor Enable bit (Fail-Safe Clock Monitor disabled)
@@ -11,11 +12,11 @@
 
 // CONFIG2L
 #pragma config PWRTEN = OFF     // Power-up Timer Enable bit (Power up timer disabled)
-#pragma config BOREN = SBORDIS  // Brown-out Reset Enable bits (Brown-out Reset enabled in hardware only (SBOREN is disabled))
+#pragma config BOREN = OFF      // Brown-out Reset Enable bits (Brown-out Reset disabled in hardware and software)
 #pragma config BORV = 190       // Brown Out Reset Voltage bits (VBOR set to 1.90 V nominal)
 
 // CONFIG2H
-#pragma config WDTEN = ON       // Watchdog Timer Enable bits (WDT is always enabled. SWDTEN bit has no effect)
+#pragma config WDTEN = OFF      // Watchdog Timer Enable bits (Watch dog timer is always disabled. SWDTEN has no effect.)
 #pragma config WDTPS = 32768    // Watchdog Timer Postscale Select bits (1:32768)
 
 // CONFIG3H

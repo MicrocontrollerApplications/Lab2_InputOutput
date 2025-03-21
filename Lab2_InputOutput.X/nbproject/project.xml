@@ -9,11 +9,11 @@
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>
-                <sourceRootElem>Libraries/LCD</sourceRootElem>
+                <sourceRootElem>..</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
-                    <name>default</name>
+                    <name>PicKIT3</name>
                     <type>2</type>
                 </confElem>
             </confList>
