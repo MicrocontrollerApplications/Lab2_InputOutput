@@ -79,15 +79,15 @@ To do so, we need to first check to which pin the middle button is connected. Th
 As soon as you have this information, continue to Excercise 4.
 
 ## Excercise 4 - Add the middle button
-Extend you code in way, so that it can recognize that the middle button is pushed. 
-If that's done you can continue to implement the following funtionality.
+You don't have to keep the current code for this excercise. You can remove the code or commet it, if you want to. But maybe you can even re-use some parts of it. 
+Extend your code in a way, so that it can recognize that the middle button is pressed. If that's done you can continue to implement the following functionality.
 > [!NOTE]
 > Remember to handle the case, that the button is pressed but not yet released.
 
 The LEDs should now be switched through each time the middle button is pressed. This means that (assuming all LEDs are currently off) LED1 should be switched on with the first press of the button, LED1 should be switched off and LED2 switched on with the next press of the button and so on. If LED4 is currently on and the button is pressed, all LEDs shall be switched off.
 
 > [!TIP]
-> Look at the [schematic](#development-boards-schematic) at *Digital In/Out* to check which pin is connected to which LED. Write down the 8 bit representation of the PORTB register and replace the relevant bits with the LEDs. Can you find a pattern that makes it easy for you to turn the next LED on if the button is pressed?
+> Look at the [schematic](#development-boards-schematic) at *Digital In/Out* to check which pin is connected to which LED. Write down the 8 bit representation of the PORTB register and replace the relevant bits with the LEDs. Can you find a pattern that makes it easy for you to turn the next LED on if the button is pressed? Furthermore, are the relevant pins configured correctly as In- or Output?
 
 ## Excercise 5 - For experts (not part of the votation)
 Change the code executed if the middle button is pressed so that it does not switch the LEDs through, but counts the times the button is pressed instead. Consider it as a binary counter.
