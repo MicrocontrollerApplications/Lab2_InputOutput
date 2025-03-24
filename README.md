@@ -96,7 +96,7 @@ You will recognize, that the LEDs might count in the wrong direction (i.e. least
 
 
 ## Development Board's Schematic
-[Here](https://raw.githubusercontent.com/MicrocontrollerApplications/Lab2_InputOutput/refs/heads/feature_initial_version/images/uCquick_Board_2018_01.svg) is a link to the standalone schematic (zoomable). 
+[Here](https://raw.githubusercontent.com/MicrocontrollerApplications/Lab2_InputOutput/refs/heads/main/images/uCquick_Board_2018_01.svg) is a link to the standalone schematic (zoomable). 
 
 ![](images/uCquick_Board_2018_01.svg)
 
