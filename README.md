@@ -1,8 +1,8 @@
 # Lab2_InputOutput
-In today's laboratory session we will deepen our knowledge about digital input and output. Therefore, we will turn our LEDs on or off with buttons and do some trainig on the handling of registers.
+In today's laboratory session we will deepen our knowledge about digital input and output. Therefore, we will turn our LEDs on or off with buttons and do some training on the handling of registers.
 See also below short description of the relevant registers for today's laboratory session.
 
-Please clone the GitHub repository, as done in the previous lab. Is you need a manual for that, click [here](https://github.com/MicrocontrollerApplications/Utilities/blob/main/git.md)
+Please clone the GitHub repository, as done in the previous lab. If you need a manual for that, click [here](https://github.com/MicrocontrollerApplications/Utilities/blob/main/git.md)
 
 ## Relevant registers
 > [!IMPORTANT]
@@ -63,7 +63,7 @@ of column LATB with a red circle. Keep in mind to start counting from 0 and from
 
 | Action| LATB   | PORTB  | LED2  | LED4  |
 | :--- |  :--- |  :--- |  :---: |  :---: | 
-| no buttons pressed | 0b 0000 0000 | 0b 0001 1110 | off | on |
+| no buttons pressed | 0b 0001 1100 | 0b 0001 1110 | off | on |
 |press button TL and hold, <br>then F5 to continue program | | | | |
 | release the button and press F5 afterwards | | | | |
 | press button TR and hold,<br> then press F5, **then press Pause!** | | | | |
@@ -71,7 +71,7 @@ of column LATB with a red circle. Keep in mind to start counting from 0 and from
 | press button TR again and hold,<br> then press F5, **then press Pause!** | | | | |
 | release the button, then press F5  | | | | |
 | press button TR again and hold,<br> then press F5, **then press Pause!** | | | | |
-| release the button,<br> then press F5, **then press Pause!** | | | | |
+| release the button,<br> then press F5 | | | | |
 
 ## Excercise 3 - Reading the schematic
 In the following excercises we will add the middle button (TM) to our code to extend its functionality.
