@@ -79,7 +79,7 @@ To do so, we need to first check to which pin the middle button is connected. Th
 As soon as you have this information, continue to Excercise 4.
 
 ## Excercise 4 - Add the middle button
-You don't have to keep the current code for this excercise. You can remove the code or commet it, if you want to. But maybe you can even re-use some parts of it. 
+You don't have to keep the current code for this excercise. You can remove the code or comment it, if you want to. But maybe you can even re-use some parts of it. 
 Extend your code in a way, so that it can recognize that the middle button is pressed. If that's done you can continue to implement the following functionality.
 > [!NOTE]
 > Remember to handle the case, that the button is pressed but not yet released.
