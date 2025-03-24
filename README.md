@@ -88,6 +88,7 @@ The LEDs should now be switched through each time the middle button is pressed. 
 
 > [!TIP]
 > Look at the [schematic](#development-boards-schematic) at *Digital In/Out* to check which pin is connected to which LED. Write down the 8 bit representation of the PORTB register and replace the relevant bits with the LEDs. Can you find a pattern that makes it easy for you to turn the next LED on if the button is pressed? Furthermore, are the relevant pins configured correctly as In- or Output?
+> Also remember the registers discussed in the lecture. Are all pins configured correctly for this task?
 
 ## Excercise 5 - For experts (not part of the votation)
 Change the code executed if the middle button is pressed so that it does not switch the LEDs through, but counts the times the button is pressed instead. Consider it as a binary counter.
