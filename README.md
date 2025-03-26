@@ -11,7 +11,7 @@ Please clone the GitHub repository, as done in the previous lab. If you need a m
 > **LATB** set the output voltage of a pin: "0" = 0 V, "1" = Vdd (3.3 V or 5 V)<br>
 > **ANSELB** sets a pin as digital or analog: "0" = digital, "1" = analog<br>
 > **OSCCON** sets the oscillator freq.: 0x50 = 4 MHz, 0x30 = 1 MHz. The instruction freq. are 1 MHz and 250 kHz respectively<br>
-> **<Register>bits.X** TRISBbits.TRISB3 or LATBbits.LATB3 or PORTBbits.RB3 is the direct access to the bit 3 via a struct (see structures in C).
+> **\<Register\>bits.X** TRISBbits.TRISB3 or LATBbits.LATB3 or PORTBbits.RB3 is the direct access to the bit 3 via a struct (see structures in C).
 
 ## Excercise 1 -  Code analysis
 
