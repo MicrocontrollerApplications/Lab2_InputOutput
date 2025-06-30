@@ -61,17 +61,17 @@ of column LATB with a red circle. Keep in mind to start counting from 0 and from
 
 <br>
 
-| Action| LATB   | PORTB  | LED2  | LED4  |
-| :--- |  :--- |  :--- |  :---: |  :---: | 
-| no buttons pressed | 0b 0001 1100 | 0b 0001 1110 | off | on |
-|press button TL and hold, <br>then F5 to continue program | | | | |
-| release the button and press F5 afterwards | | | | |
-| press button TR and hold,<br> then press F5, **then press Pause!** | | | | |
-| release the button, then press F5 | | | | |
-| press button TR again and hold,<br> then press F5, **then press Pause!** | | | | |
-| release the button, then press F5  | | | | |
-| press button TR again and hold,<br> then press F5, **then press Pause!** | | | | |
-| release the button,<br> then press F5 | | | | |
+| Action                                                                   | LATB        | PORTB       | LED2 | LED4 |
+| :----------------------------------------------------------------------- | :---------- | :---------- | :--: | :--: |
+| no buttons pressed                                                       | 0b0001 1100 | 0b0001 1100 | off  |  on  |
+| press button TL and hold, <br>then F5 to continue program                |             |             |      |      |
+| release the button and press F5 afterwards                               |             |             |      |      |
+| press button TR and hold,<br> then press F5, **then press Pause!**       |             |             |      |      |
+| release the button, then press F5                                        |             |             |      |      |
+| press button TR again and hold,<br> then press F5, **then press Pause!** |             |             |      |      |
+| release the button, then press F5                                        |             |             |      |      |
+| press button TR again and hold,<br> then press F5, **then press Pause!** |             |             |      |      |
+| release the button,<br> then press F5                                    |             |             |      |      |
 
 ## Excercise 3 - Reading the schematic
 In the following excercises we will add the middle button (TM) to our code to extend its functionality.
